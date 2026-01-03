@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Codex Decrypted</h2>
+<p>The Brotherhood has generated a temporary access key for you.</p>
+<p>Copy this token quickly. The Templars are monitoring the network (Expires in 20s).</p>
+
+<div style="margin: 20px 0;">
+    <label style="color: var(--ac-gold); font-size: 0.9em; text-transform: uppercase;">Identity Token:</label>
+    <input type="text" value="{{ token }}" readonly style="cursor: text; font-weight: bold; color: var(--ac-white);">
+</div>
+
+<p style="font-size: 0.9em; color: var(--ac-red);">
+    <em>Warning: Do not share this with civilians.</em>
+</p>
+{% endblock %}

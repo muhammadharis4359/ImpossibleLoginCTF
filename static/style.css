@@ -1,0 +1,157 @@
+/* Assassin's Creed: Rome / Brotherhood Theme */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+:root {
+    --ac-red: #8a0303;      /* Deep Crimson */
+    --ac-gold: #c5a059;     /* Antique Gold */
+    --ac-black: #0f0f0f;    /* Dark Background */
+    --ac-white: #e0e0e0;    /* Off-white text */
+    --parchment: #1a1a1a;   /* Dark panel bg */
+}
+
+body {
+    font-family: 'Lato', sans-serif; /* Readable body text */
+    background-color: var(--ac-black);
+    /* Vignette effect for dramatic look */
+    background-image: radial-gradient(circle at center, #1f1f1f 0%, #000000 100%);
+    color: var(--ac-white);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* The Top Bar - Rome Style */
+.header {
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.95);
+    border-bottom: 3px solid var(--ac-red);
+    color: var(--ac-gold);
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Cinzel', serif; /* Roman Font */
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.header::before {
+    content: "✠ "; /* Simple cross symbol looking like Templar/Assassin mix */
+    color: var(--ac-red);
+}
+.header::after {
+    content: " ✠";
+    color: var(--ac-red);
+}
+
+/* The Main Box */
+.content {
+    margin-top: 50px;
+    padding: 40px;
+    background-color: var(--parchment);
+    width: 80%;
+    max-width: 550px;
+    border: 1px solid var(--ac-gold);
+    border-top: 5px solid var(--ac-red);
+    box-shadow: 0 0 30px rgba(138, 3, 3, 0.2);
+    position: relative;
+    text-align: center;
+}
+
+/* Decorative Corners (Gold accents) */
+.content::before {
+    content: "";
+    position: absolute;
+    top: -6px; left: -6px; right: -6px; bottom: -6px;
+    border: 1px solid var(--ac-gold);
+    z-index: -1;
+    opacity: 0.5;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    color: var(--ac-gold);
+    border-bottom: 1px solid var(--ac-red);
+    padding-bottom: 15px;
+    margin-top: 0;
+    font-size: 1.6em;
+}
+
+p {
+    font-size: 1.1em;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    color: var(--ac-red);
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px dashed var(--ac-gold);
+    transition: 0.3s;
+}
+a:hover {
+    color: var(--ac-gold);
+    border-bottom: 1px solid var(--ac-red);
+}
+
+/* Form Styling */
+form {
+    margin-top: 25px;
+}
+
+form input {
+    width: calc(100% - 30px);
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #000;
+    border: 1px solid var(--ac-gold);
+    color: var(--ac-gold);
+    font-family: 'Cinzel', serif;
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+form input:focus {
+    outline: none;
+    box-shadow: 0 0 10px var(--ac-red);
+    border-color: var(--ac-red);
+}
+
+form button {
+    margin-top: 15px;
+    padding: 12px 30px;
+    background-color: var(--ac-red);
+    color: var(--ac-white);
+    border: 1px solid var(--ac-red);
+    font-family: 'Cinzel', serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+form button:hover {
+    background-color: #5c0000;
+    border-color: var(--ac-gold);
+    color: var(--ac-gold);
+}
+
+/* Flag Display */
+pre {
+    background-color: #000;
+    border: 1px solid var(--ac-red);
+    color: var(--ac-gold);
+    padding: 15px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+}

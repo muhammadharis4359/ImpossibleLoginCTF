@@ -1,0 +1,18 @@
+CHALLENGE NAME: The Impossible Login
+AUTHOR: Ubaid 
+DIFFICULTY: Easy 
+FLAG: CREED{you_found_it}
+
+DESCRIPTION: Welcome to the Animus, Initiate.
+
+We have located a secure Borgia server. The archives are protected by a volatile authentication system where keys degrade in mere seconds. Speed is your only ally.
+
+But entry is just the beginning. The artifact you seek is not listed on the main dashboard. To find it, you must think like an Assassin:
+
+Observe: Look for the rules that tell search engines where not to look.
+
+Act: You cannot simply claim the prize. You must run the hidden path first to prove your worth.
+
+synchronize the memory. Break the loop.
+
+Nothing is true, everything is permitted.

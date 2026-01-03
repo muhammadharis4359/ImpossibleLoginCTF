@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Parkour Sequence Complete</h2>
+<p><strong>Status: Anonymous</strong></p>
+<p>You have successfully evaded the guards and reached the checkpoint.</p>
+<p>Your session has been updated with high-profile clearance.</p>
+
+<hr style="border: 0; border-top: 1px dashed var(--ac-gold); margin: 20px 0;">
+
+<p>The hidden artifact path is now unlocked.</p>
+
+<div style="margin-top: 20px;">
+    <a href="{{ url_for('dashboard') }}">Return to Shadows</a>
+</div>
+{% endblock %}

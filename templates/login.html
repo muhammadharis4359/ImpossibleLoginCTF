@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Access Restricted</h2>
+<p>To enter the hidden archives of the Brotherhood, you must prove your identity.</p>
+<p>Please enter your <strong>pre-auth token</strong> to access the Memory Sequence.</p>
+<form method="POST">
+    <input type="text" name="token" placeholder="ENTER TOKEN" required>
+    <button type="submit">Synchronize</button>
+</form>
+{% endblock %}

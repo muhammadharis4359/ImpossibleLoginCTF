@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 style="color: var(--ac-red)">Desynchronized</h2>
+<p>{{ message }}</p>
+<a href="{{ url_for('login') }}">Restart Memory</a>
+{% endblock %}
